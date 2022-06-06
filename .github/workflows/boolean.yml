@@ -1,0 +1,28 @@
+name: Testing
+
+on:
+ workflow_dispatch:
+    inputs:
+     Name:
+     description: 'Enter u r name'
+     default: 'Leela'
+     Age:
+     description: 'Enter  u r age'
+     type: boolean 
+     Phone:
+     description: 'sjidiu'
+     require: true
+    
+  jobs:
+   build:
+  
+    runson: ubuntu-latest
+    -name: Starting job
+    needs: [rules]  
+    if: ${{ (needs.rules.outputs.Age!= 'true')
+    -Phone ${{github.event.inputs.Phone }} 
+  get-date
+  shell: pwsh
+  
+  
+     
