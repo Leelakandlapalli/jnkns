@@ -15,16 +15,16 @@ on:
     
 jobs:
  
-     build:
+       build:
   
-     runson: ubuntu-latest
-     -name: Starting job
+       runson: ubuntu-latest
+       -name: Starting job
      
-     needs: [rules]  
-     if: ${{ (needs.rules.outputs.Age!= 'true')
-      -Phone ${{github.event.inputs.Phone }} 
-      get-date
-      shell: pwsh
+       needs: [rules]  
+       if: ${{ (needs.rules.outputs.Age!= 'true')
+       -Phone ${{github.event.inputs.Phone }} 
+      
+      
     
   
   
