@@ -9,5 +9,5 @@ jobs:
    - shell: pwsh
    env:
       DOB: ${{ secrets.SuperSecret }}
-   run: |
-      example-command "$env:DOB"
+      run: |
+       example-command "$env:DOB"
